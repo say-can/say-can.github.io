@@ -150,7 +150,7 @@ We evaluate our method on a number of real-world robotic control tasks, where we
                 We began our investigation with two existing methods: AWAC, which combines IL and RL, and QT-Opt, a scalable RL algorithm we have been using on our robots. Our testbed consists of 6 tasks, including a navigation task with dense reward and 5 manipulation tasks with sparse rewards. The manipulation tasks are on two different robot platforms using different control modalities (KUKA and our proprietary robot). Our tasks cover varying levels of difficulty from indiscriminate grasping (figure (a) and (c) below) to semantic grasping (figure (d), grasping compostable objects) to instance grasping (figure (b), grasping the green bowl).
                 </p>
                 <p style="text-align:center;">
-                    <image src="img/tasks.png"  class="img-responsive" height="600px">
+                    <image src="img/saycan-alg.png"  class="img-responsive" height="600px">
                 </p>
                 <p class="text-justify">
             	Both algorithms are provided with demonstrations for offline pretraining, either from human or from previous successful RL rollouts. Afterwards they switch to on-policy data collection and training. We found that QT-Opt fails to learn from only successful rollouts, and even fails to make progress during on-policy training for tasks with a 7 DoF action space. On the other hand, AWAC does attain non-zero success rates from the demonstrations, but performance is still poor, and performance collapses during online fine-tuning for all our sparse-reward manipulation tasks.
