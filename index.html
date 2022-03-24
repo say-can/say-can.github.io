@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>AW-Opt</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <meta property="og:image" content="https://aw-opt.github.com/img/awopt.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="682">
+    <meta property="og:image:height" content="682">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aw-opt.github.com/"/>
+    <meta property="og:title" content="AW-Opt" />
+    <meta property="og:description" content="Project page for AW-Opt: Learning Robotic Skills with Imitation and Reinforcement at Scale." />
+
+        <!--TWITTER-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AW-Opt" />
+    <meta name="twitter:description" content="Project page for AW-Opt: Learning Robotic Skills with Imitation and Reinforcement at Scale." />
+    <meta name="twitter:image" content="https://aw-opt.github.com/img/awopt.png" />
+
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>AW-Opt</b>: Learning Robotic Skills with <br> Imitation and Reinforcement Learning at Scale </br> 
+                <small>
+                    CoRL 2021
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+			<a href="https://scholar.google.com/citations?hl=en&user=OI7zFmwAAAAJ&">
+                          Yao Lu
+			</a>
+                    </li>
+                    <li>
+                        <a href="http://karolhausman.github.io/">
+                            Karol Hausman
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www-clmc.usc.edu/Main/YevgenChebotar">
+                          Yevgen Chebotar
+                        </a>
+                    </li>
+                    <li>
+			<a href="https://scholar.google.com/citations?user=-S_9ZRcAAAAJ&hl=en">
+                          Mengyuan Yan
+			</a>
+                    </li>
+                    <li>
+                        <a href="https://evjang.com/">
+                          Eric Jang
+                        </a>
+                    </li>
+ 	            <li>
+                        <a href="https://scholar.google.com/citations?user=jrfFYAIAAAAJ&hl=en">
+                          Alexander Herzog
+                        </a>
+                    </li><br>
+                    <li>
+                        <a href="https://tedxiao.me/">
+                          Ted Xiao
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="https://www.alexirpan.com/">
+                          Alex Irpan
+                  	</a>
+                    </li>                    
+                    <li>
+                        <a href="https://scholar.google.ch/citations?user=Z3dxz9IAAAAJ&hl=en">
+                          Mohi Khansari
+                        </a>
+                    </li>
+                    <li>
+			<a href="https://scholar.google.com/citations?user=2DBmo-wAAAAJ&hl=en">
+                          Dmitry Kalashnikov
+			</a>
+                    </li>                    
+                    <li>
+                        <a href="http://people.eecs.berkeley.edu/~svlevine/">
+                          Sergey Levine
+                        </a>
+                    </li><br><br>
+                    <a href="https://research.google/teams/brain/robotics/">
+                    <image src="img/robotics-at-google.png" height="40px"> Robotics at Google</a> <br><br>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <!-- li>
+                            <a href="https://arxiv.org/abs/2104.08212">
+                            <image src="img/mip_paper_image.jpg" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li -->
+                        <!-- li>
+                            <a href="https://youtu.be/i3uUGSko2zY">
+                            <image src="img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li -->
+                        <!-- li>
+                            <a href="https://ai.googleblog.com/2021/04/multi-task-robotic-reinforcement.html">
+                            <image src="img/google-ai-blog-small.png" height="60px">
+                                <h4><strong>Blogpost</strong></h4>
+                            </a>
+                        </li -->
+                        <!-- <li>
+                            <a href="https://github.com/">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p style="text-align:center;">
+        	    <image src="img/collage_v2.gif" class="img-responsive">
+                </p>
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+Robotic skills can be learned via imitation learning (IL) using user-provided demonstrations, or via reinforcement learning (RL) using large amounts of autonomously collected experience. Both methods have complementary strengths and weaknesses: RL can reach a high level of performance, but requires exploration, which can be very time consuming and unsafe; IL does not require exploration, but only learns skills that are as good as the provided demonstrations. Can a single method combine the strengths of both approaches? A number of prior methods have aimed to address this question, proposing a variety of techniques that integrate elements of IL and RL. However, scaling up such methods to complex robotic skills that integrate diverse offline data and generalize meaningfully to real-world scenarios still presents a major challenge. In this paper, our aim is to test the scalability of prior IL + RL algorithms and devise a system based on detailed empirical experimentation that combines existing components in the most effective and scalable way. To that end, we present a series of experiments aimed at understanding the implications of each design decision, so as to develop a combined approach that can utilize demonstrations and heterogeneous prior data to attain the best performance on a range of real-world and realistic simulated robotic problems. Our complete method, which we call AW-Opt, combines elements of advantage-weighted regression and QT-Opt, providing a unified approach for integrating demonstrations and offline data for robotic manipulation.
+                </p>
+            </div>
+        </div>
+
+
+
+        <!--div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/i3uUGSko2zY" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div -->
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+            	<br>
+                <h3>
+                    Approach
+                </h3>
+                <p class="text-justify">
+                We began our investigation with two existing methods: AWAC, which combines IL and RL, and QT-Opt, a scalable RL algorithm we have been using on our robots. Our testbed consists of 6 tasks, including a navigation task with dense reward and 5 manipulation tasks with sparse rewards. The manipulation tasks are on two different robot platforms using different control modalities (KUKA and our proprietary robot). Our tasks cover varying levels of difficulty from indiscriminate grasping (figure (a) and (c) below) to semantic grasping (figure (d), grasping compostable objects) to instance grasping (figure (b), grasping the green bowl).
+                </p>
+                <p style="text-align:center;">
+                    <image src="img/tasks.png"  class="img-responsive" height="600px">
+                </p>
+                <p class="text-justify">
+            	Both algorithms are provided with demonstrations for offline pretraining, either from human or from previous successful RL rollouts. Afterwards they switch to on-policy data collection and training. We found that QT-Opt fails to learn from only successful rollouts, and even fails to make progress during on-policy training for tasks with a 7 DoF action space. On the other hand, AWAC does attain non-zero success rates from the demonstrations, but performance is still poor, and performance collapses during online fine-tuning for all our sparse-reward manipulation tasks.
+	        </p>
+		<p style="test-align:center;">
+		    <image src="img/performance-summary.png"  class="image-responsive" width="100%">
+		</p>
+		<p class="text-justify">
+		We introduced a series of modifications to AWAC that bring it closer to QT-Opt, improving overall learning performance while retaining the ability to utilize demonstrations, culminating in our full AW-Opt algorithm. 
+		</p>
+		<p class="text-justify">
+		<b>Positive Sample Filtering</b>: One possible explanation for the poor performance of AWAC is that, due to the relatively low success rate after pretraining, during online exploration, large amounts of failed episodes drowns the initial successful demonstrations and the actor unlearns the promising policy. To address this issue, we used positive filtering for the actor, applying the AWAC actor update only on successful samples. As a result, the algorithm no longer collapses during on-policy training.
+		</p>
+		<p style="test-align:center;">
+		    <image src="img/positive-sample-filtering.png"  class="image-responsive" width="80%">
+		</p>
+		<p class="text-justify">
+		<b>Hybrid Actor-Critic Exploration</b>: QT-Opt uses the cross-entropy method (CEM) to optimize the actions with respect to the critic’s prediction, which can be viewed as an implicit policy (CEM policy). The CEM process has intrinsic noise due to sampling and can act as an exploration policy. AWAC on the other hand, explores by sampling from the actor network, although we could also obtain a CEM policy from its critic. We found that using both the actor and the CEM policies for exploration, by switching randomly between the two on a per-episode basis, performs better than using either one alone.
+		</p>
+		<p style="test-align:center;">
+		    <image src="img/hybrid-exploration.png"  class="image-responsive" width="80%">
+		</p>
+		<p class="text-justify">
+		<b>Action Selection in Bellman Update</b>: QT-Opt uses CEM to find the optimal action for the Bellman backup target. AWAC on the other hand, samples from the actor network. We compared both methods as well as two new ones combining both actor and critic networks: (a) using the actor predicted action (Gaussian mean) as the initial mean for CEM; (b) using the actor-predicted action as an additional candidate in each round of CEM. We found that the last choice gave us the best performance.
+		</p>
+		<p style="test-align:center;">
+		    <image src="img/bellman-update.png"  class="image-responsive" width="80%">
+		</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+            	<br>
+                <h3>
+                    Results
+                </h3>
+		<p class="text-justify">
+		Our results suggest that AW-Opt can be a powerful IL+RL method for scaling up robotic skills learning. With AW-Opt we have shown that depending on task difficulty, with a few hours or a few days of human demonstration and additional simulated on-policy training, we can get high-performing manipulation or navigation policies without task-specific engineering.
+A compilation of AW-Opt evaluation videos on several tasks is shown below.
+		</p>
+		<p style="test-align:center;">
+		    <image src="img/collage_v2.gif"  class="image-responsive" width="100%">
+		</p>
+	    </div>
+        </div>
+            
+        
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@inproceedings{awopt2021corl,
+    title={AW-Opt: Learning Robotic Skills with Imitation andReinforcement at Scale},
+    author={Yao Lu and Karol Hausman and Yevgen Chebotar and Mengyuan Yan and Eric Jang and Alexander Herzog and Ted Xiao and Alex Irpan and Mohi Khansari and Dmitry Kalashnikov and Sergey Levine},
+    booktitle={5th Annual Conference on Robot Learning },
+    year={2021}
+}</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                The authors would like to give special thanks to Dao Tran, Conrad Villondo, Clayton Tan for collecting demonstration data as well as Julian Ibarz and Kanishka Rao for valuable discussions.
+                    <br><br>
+                The website template was borrowed from <a href="http://jonbarron.info/">Jon Barron</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
