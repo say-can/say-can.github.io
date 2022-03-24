@@ -53,70 +53,17 @@
     <div class="container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-                <b>AW-Opt</b>: Learning Robotic Skills with <br> Imitation and Reinforcement Learning at Scale </br> 
-                <small>
+                <b>Do As I Can, Not As I Say</b>: </br> Grounding Language in Robotic Affordances </br> 
+                <!--<small>
                     CoRL 2021
-                </small>
+                </small>-->
             </h2>
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
-                    <li>
-			<a href="https://scholar.google.com/citations?hl=en&user=OI7zFmwAAAAJ&">
-                          Yao Lu
-			</a>
-                    </li>
-                    <li>
-                        <a href="http://karolhausman.github.io/">
-                            Karol Hausman
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www-clmc.usc.edu/Main/YevgenChebotar">
-                          Yevgen Chebotar
-                        </a>
-                    </li>
-                    <li>
-			<a href="https://scholar.google.com/citations?user=-S_9ZRcAAAAJ&hl=en">
-                          Mengyuan Yan
-			</a>
-                    </li>
-                    <li>
-                        <a href="https://evjang.com/">
-                          Eric Jang
-                        </a>
-                    </li>
- 	            <li>
-                        <a href="https://scholar.google.com/citations?user=jrfFYAIAAAAJ&hl=en">
-                          Alexander Herzog
-                        </a>
-                    </li><br>
-                    <li>
-                        <a href="https://tedxiao.me/">
-                          Ted Xiao
-                        </a>
-                    </li>
-                    <li>
-                    	<a href="https://www.alexirpan.com/">
-                          Alex Irpan
-                  	</a>
-                    </li>                    
-                    <li>
-                        <a href="https://scholar.google.ch/citations?user=Z3dxz9IAAAAJ&hl=en">
-                          Mohi Khansari
-                        </a>
-                    </li>
-                    <li>
-			<a href="https://scholar.google.com/citations?user=2DBmo-wAAAAJ&hl=en">
-                          Dmitry Kalashnikov
-			</a>
-                    </li>                    
-                    <li>
-                        <a href="http://people.eecs.berkeley.edu/~svlevine/">
-                          Sergey Levine
-                        </a>
-                    </li><br><br>
+                <li>Michael Ahn</li> <li>Anthony Brohan</li> <li>Noah Brown</li> <li>Yevgen Chebotar</li> <li>Omar Cortes</li> <li>Byron David</li> <li>Chelsea Finn</li> <li>Keerthana Gopalakrishnan</li> <li>Karol Hausman</li> <li>Alex Herzog</li> <li>Jasmine Hsu</li> <li>Julian Ibarz</li> <li>Brian Ichter</li> <li>Alex Irpan</li> <li>Eric Jang</li> <li>Rosario Jauregui Ruano</li> <li>Kyle Jeffrey</li> <li>Sally Jesmonth</li> <li>Nikhil Joshi</li> <li>Ryan Julian</li> <li>Dmitry Kalashnikov</li> <li>Yuheng Kuang</li> <li>Kuang-Huei Lee</li> <li>Sergey Levine</li> <li>Yao Lu</li> <li>Linda Luu</li> <li>Carolina Parada</li> <li>Peter Pastor</li> <li>Jornell Quiambao</li> <li>Kanishka Rao</li> <li>Jarek Rettinghouse</li> <li>Diego Reyes</li> <li>Pierre Sermanet</li> <li>Nicolas Sievers</li> <li>Clayton Tan</li> <li>Alexander Toshev</li> <li>Fei Xia</li> <li>Ted Xiao</li> <li>Peng Xu</li> <li>Sichun Xu</li> <li>Mengyuan Yan</li>
+                <br><br>
                     <a href="https://research.google/teams/brain/robotics/">
                     <image src="img/robotics-at-google.png" height="40px"> Robotics at Google</a> <br><br>
                 </ul>
@@ -160,13 +107,19 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <p style="text-align:center;">
-        	    <image src="img/collage_v2.gif" class="img-responsive">
+        	    <image src="img/saycan-llm.gif" class="img-responsive">
                 </p>
                 <h3>
                     Abstract
                 </h3>
                 <p class="text-justify">
-Robotic skills can be learned via imitation learning (IL) using user-provided demonstrations, or via reinforcement learning (RL) using large amounts of autonomously collected experience. Both methods have complementary strengths and weaknesses: RL can reach a high level of performance, but requires exploration, which can be very time consuming and unsafe; IL does not require exploration, but only learns skills that are as good as the provided demonstrations. Can a single method combine the strengths of both approaches? A number of prior methods have aimed to address this question, proposing a variety of techniques that integrate elements of IL and RL. However, scaling up such methods to complex robotic skills that integrate diverse offline data and generalize meaningfully to real-world scenarios still presents a major challenge. In this paper, our aim is to test the scalability of prior IL + RL algorithms and devise a system based on detailed empirical experimentation that combines existing components in the most effective and scalable way. To that end, we present a series of experiments aimed at understanding the implications of each design decision, so as to develop a combined approach that can utilize demonstrations and heterogeneous prior data to attain the best performance on a range of real-world and realistic simulated robotic problems. Our complete method, which we call AW-Opt, combines elements of advantage-weighted regression and QT-Opt, providing a unified approach for integrating demonstrations and offline data for robotic manipulation.
+Large language models (LLMs) can encode a wealth of semantic knowledge about the world. Such knowledge could in principle be extremely useful to robots aiming to act upon high-level, temporally extended instructions expressed in natural language.
+However, a significant weakness of language models is that they lack contextual grounding, which makes it difficult to leverage them for decision making within a given real-world context. 
+For example, asking a language model to describe how to make a coffee might result in a reasonable narrative, but this narrative may not be applicable to a particular agent, such as a robot, that actually needs to perform this task in a particular kitchen. 
+We propose to provide this grounding by means of pretrained behaviors, which can be used to condition the model to propose natural language actions that are both feasible and contextually appropriate. 
+The robot can act as the language model’s “hands and eyes,” while the language model supplies high-level semantic knowledge about the task. 
+Specifically, we show how low-level tasks can be combined with large language models  in  such  a  way  that  the  language  model  provides  high-level  knowledge about the procedures for performing complex and temporally extended instructions,  while  value  functions  associated  with  these  tasks  provide  the  grounding necessary to connect this knowledge to a particular physical environment.  
+We evaluate our method on a number of real-world robotic control tasks, where we show that this approach is capable of executing long-horizon,  abstract,  natural-language tasks on a mobile manipulator.
                 </p>
             </div>
         </div>
