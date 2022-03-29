@@ -86,7 +86,7 @@
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-                            <a href="https://arxiv.org/abs/2104.08212">
+                            <a href="#">
                             <image src="img/mip_paper_image.jpg" height="60px">
                                 <h4><strong>Paper</strong></h4>
                             </a>
@@ -203,25 +203,52 @@ In summary and given a high-level instruction and SayCan combines probabilities 
                     Results
                 </h3>
 		<p class="text-justify">
-		Add text here
+		We benchmarked the proposed algorithm Saycan in 2 scenes, an office kitchen and a mock office kitchen. We defined 101 tasks specified by natural langauge 
+			instructions. Below we show some highlights of the propsoed method.
 		</p>
+		
+		<p class="text-justify">
+			We visualize the decision making process of SayCan. The blue bar indicates (normalized) LLM probability and the red bar indicates (normalized) probability of 
+			successful execution of selected skills. The combined score is in green bar, and the algorithm choose the skill with highest combined score. This visualization
+			highlights the interpretability of SayCan.
+		</p>
+		    
+		<p class="text-justify">
+			Given the task "I spilled my coke, can you bring me a replacement?", Say would successfully plan the steps instead 1. Find a coke can 2. Pick up the coke can
+			3. Bring it to you 4. Done. This highlights that SayCan leverages the large capacity of LLMs, 
+			where it's semantic knowledge about the world can be useful both for interpreting instructions
+			and understanding how to execute them.
+	        </p>
                 <p style="text-align:center;">
-                    <image src="img/saycan-alg.png"  class="img-responsive" height="600px">
+                    <image src="img/qualitative_1.png"  class="img-responsive" height="600px">
                 </p>
+			
+		
+		<p class="text-justify">
+			However, if we slightly tweak the task to "I spilled my coke, can you bring me something to clean it up?", Say can successfully planned the steps 1. Find a sponge 2. Pick up the sponge
+			3. Bring it to you 4. Done. As shown below:
+	        </p>
+			
+		  <p style="text-align:center;">
+                    <image src="img/qualitative_2.png"  class="img-responsive" height="600px">
+                </p>
+			  
                 <p class="text-justify">
-		Add text here
+			The proposed approach achieves an overall plan success rate of 70% and execution success rate of 61% of 101 tasks. For more details, please refer to 
+			our paper. 
 		</p>
 		<p style="test-align:center;">
 		    <image src="img/mosaic_16_narrow.gif"  class="image-responsive" width="100%">
 		</p>
 		<p class="text-justify">
-		Example run:
+		The proposed method can scale to long horizon tasks involving multiple steps, for example, for the task "I spilled my coke on the table,
+			how would you throw it away and bring me something to help clean", the robot successfully planned and execute 8 steps. 
 		</p>
 		<p style="test-align:center;">
 		    <image src="img/demo_part1.gif"  class="image-responsive" width="100%">
 		</p>
 		<p class="text-justify">
-		Continues:
+		The gif is continued as below:
 		</p>
 		<p style="test-align:center;">
 		    <image src="img/demo_part2.gif"  class="image-responsive" width="100%">
@@ -238,10 +265,10 @@ In summary and given a high-level instruction and SayCan combines probabilities 
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
                     <textarea id="bibtex" class="form-control" readonly>
-@inproceedings{saycan2021arxiv,
+@inproceedings{saycan2022arxiv,
     title={Do As I Can and Not As I Say: Grounding Language in Robotic Affordances},
     author={Michael Ahn and Anthony Brohan and Noah Brown and Yevgen Chebotar and Omar Cortes and Byron David and Chelsea Finn and Keerthana Gopalakrishnan and Karol Hausman and Alex Herzog and Jasmine Hsu and Julian Ibarz and Brian Ichter and Alex Irpan and Eric Jang and Rosario Jauregui Ruano and Kyle Jeffrey and Sally Jesmonth and Nikhil Joshi and Ryan Julian and Dmitry Kalashnikov and Yuheng Kuang and Kuang-Huei Lee and Sergey Levine and Yao Lu and Linda Luu and Carolina Parada and Peter Pastor and Jornell Quiambao and Kanishka Rao and Jarek Rettinghouse and Diego Reyes and Pierre Sermanet and Nicolas Sievers and Clayton Tan and Alexander Toshev and Vincent Vanhoucke and Fei Xia and Ted Xiao and Peng Xu and Sichun Xu and Mengyuan Yan},
-    booktitle={arXiv preprint arXiv:2104.08212},
+    booktitle={arXiv preprint arXiv:2022.00000},
     year={2022}
 }</textarea>
                 </div>
@@ -255,8 +282,8 @@ In summary and given a high-level instruction and SayCan combines probabilities 
                 </h3>
                 <p class="text-justify">
                 The authors would like to thank Andy Zeng,
-Maarten Bosma and Vincent Zhao and Ian Storz and Benjamin Lee and Bill Byrne and Noah Constant,
-Dhruv Shah and Suraj Nair and Rico Jonschkowski and Hugo Larochelle
+Maarten Bosma, Vincent Zhao, Ian Storz, Benjamin Lee, Bill Byrne, Noah Constant,
+Dhruv Shah, Suraj Nair, Rico Jonschkowski, Hugo Larochelle
 and Adrian Li for their help and support in various aspects of the project.
                     <br><br>
                 The website template was borrowed from <a href="http://jonbarron.info/">Jon Barron</a>.
