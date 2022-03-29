@@ -203,21 +203,22 @@ In summary and given a high-level instruction and SayCan combines probabilities 
                     Results
                 </h3>
 		<p class="text-justify">
-		We benchmarked the proposed algorithm Saycan in 2 scenes, an office kitchen and a mock office kitchen. We defined 101 tasks specified by natural langauge 
-			instructions. Below we show some highlights of the propsoed method.
+		We benchmarked the proposed algorithm Saycan in two scenes, an office kitchen and a mock office kitchen with 101 tasks specified by natural 
+			langauge instructions. Below we show some highlights of the results.
 		</p>
 		
 		<p class="text-justify">
-			We visualize the decision making process of SayCan. The blue bar indicates (normalized) LLM probability and the red bar indicates (normalized) probability of 
-			successful execution of selected skills. The combined score is in green bar, and the algorithm choose the skill with highest combined score. This visualization
+			We visualize the decision making process of SayCan. The blue bar indicates (normalized) LLM probability and the red bar 
+			indicates (normalized) probability of 
+			successful execution of selected skills. The combined score is in green bar, 
+			and the algorithm choose the skill with highest combined score. This visualization
 			highlights the interpretability of SayCan.
 		</p>
 		    
 		<p class="text-justify">
-			Given the task "I spilled my coke, can you bring me a replacement?", Say would successfully plan the steps instead 1. Find a coke can 2. Pick up the coke can
-			3. Bring it to you 4. Done. This highlights that SayCan leverages the large capacity of LLMs, 
-			where it's semantic knowledge about the world can be useful both for interpreting instructions
-			and understanding how to execute them.
+			Given the task "I spilled my coke, can you bring me something to clean it up?", SayCan successfully planned and executed the following 
+			steps 1. Find a sponge 2. Pick up the sponge
+			3. Bring it to you 4. Done. As shown below:
 	        </p>
                 <p style="text-align:center;">
                     <image src="img/qualitative_1.png"  class="img-responsive" height="600px">
@@ -225,8 +226,11 @@ In summary and given a high-level instruction and SayCan combines probabilities 
 			
 		
 		<p class="text-justify">
-			However, if we slightly tweak the task to "I spilled my coke, can you bring me something to clean it up?", Say can successfully planned the steps 1. Find a sponge 2. Pick up the sponge
-			3. Bring it to you 4. Done. As shown below:
+			However, if we slightly tweak the task to "I spilled my coke, can you bring me a replacement", SayCan planned the following steps instead
+			1. Find a coke can 2. Pick up the coke can
+			3. Bring it to you 4. Done. This highlights that SayCan is able to leverage the large capacity of LLMs, 
+			where it's semantic knowledge about the world can be useful both for interpreting instructions
+			and understanding how to execute them.
 	        </p>
 			
 		  <p style="text-align:center;">
@@ -242,21 +246,20 @@ In summary and given a high-level instruction and SayCan combines probabilities 
 		</p>
 		<p class="text-justify">
 		The proposed method can scale to long horizon tasks involving multiple steps, for example, for the task "I spilled my coke on the table,
-			how would you throw it away and bring me something to help clean", the robot successfully planned and execute 8 steps. 
+			how would you throw it away and bring me something to help clean", the robot successfully planned and execute 8 steps. The execution 
+			and planning process are shown in the two gifs below.
 		</p>
 		<p style="test-align:center;">
 		    <image src="img/demo_part1.gif"  class="image-responsive" width="100%">
 		</p>
 		<p class="text-justify">
-		The gif is continued as below:
+		(continued)
 		</p>
 		<p style="test-align:center;">
 		    <image src="img/demo_part2.gif"  class="image-responsive" width="100%">
 		</p>
 	    </div>
         </div>
-            
-        
             
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
