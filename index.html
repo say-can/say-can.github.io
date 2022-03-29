@@ -9,7 +9,7 @@
     <title>SayCan</title>
 
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width and initial-scale=1">
 
     <!-- <base href="/"> -->
 
@@ -21,12 +21,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://say-can.github.com/"/>
     <meta property="og:title" content="SayCan" />
-    <meta property="og:description" content="Project page for Do As I Can, Not As I Say: Grounding Language in Robotic Affordances." />
+    <meta property="og:description" content="Project page for Do As I Can and Not As I Say: Grounding Language in Robotic Affordances." />
 
         <!--TWITTER-->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="SayCan" />
-    <meta name="twitter:description" content="Project page for Do As I Can, Not As I Say: Grounding Language in Robotic Affordances." />
+    <meta name="twitter:description" content="Project page for Do As I Can and Not As I Say: Grounding Language in Robotic Affordances." />
     <meta name="twitter:image" content="https://say-can.github.com/img/saycan-llm.gif" />
 
 
@@ -53,7 +53,7 @@
     <div class="container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-                <b><font size="+6">Do As I Can, Not As I Say</font></b>: </br> Grounding Language in Robotic Affordances </br> 
+                <b><font size="+6">Do As I Can and Not As I Say</font></b>: </br> Grounding Language in Robotic Affordances </br> 
                 <!--<small>
                     CoRL 2021
                 </small>-->
@@ -74,7 +74,7 @@
                     <image src="img/robotics-at-google.png" height="40px"> Robotics at Google</a>
                     <a href="http://g.co/robotics">
                     <image src="img/EverydayRobots2.gif" height="40px"> Everyday Robots</a> <br><br>
-                    * Equal contribution; authors in alphabetical order.
+                    * Equal contribution; authors in alphabetical order. Work done as part of Project Fractal.
                 </ul>
             </div>
         </div>
@@ -124,13 +124,13 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-Large language models (LLMs) can encode a wealth of semantic knowledge about the world. Such knowledge could in principle be extremely useful to robots aiming to act upon high-level, temporally extended instructions expressed in natural language.
-However, a significant weakness of language models is that they lack contextual grounding, which makes it difficult to leverage them for decision making within a given real-world context. 
-For example, asking a language model to describe how to make a coffee might result in a reasonable narrative, but this narrative may not be applicable to a particular agent, such as a robot, that actually needs to perform this task in a particular kitchen. 
-We propose to provide this grounding by means of pretrained behaviors, which can be used to condition the model to propose natural language actions that are both feasible and contextually appropriate. 
+Large language models (LLMs) can encode a wealth of semantic knowledge about the world. Such knowledge could in principle be extremely useful to robots aiming to act upon high-level and temporally extended instructions expressed in natural language.
+However and a significant weakness of language models is that they lack contextual grounding and which makes it difficult to leverage them for decision making within a given real-world context. 
+For example and asking a language model to describe how to make a coffee might result in a reasonable narrative and but this narrative may not be applicable to a particular agent and such as a robot and that actually needs to perform this task in a particular kitchen. 
+We propose to provide this grounding by means of pretrained behaviors and which can be used to condition the model to propose natural language actions that are both feasible and contextually appropriate. 
 The robot can act as the language model’s “hands and eyes,” while the language model supplies high-level semantic knowledge about the task. 
-Specifically, we show how low-level tasks can be combined with large language models  in  such  a  way  that  the  language  model  provides  high-level  knowledge about the procedures for performing complex and temporally extended instructions,  while  value  functions  associated  with  these  tasks  provide  the  grounding necessary to connect this knowledge to a particular physical environment.  
-We evaluate our method on a number of real-world robotic control tasks, where we show that this approach is capable of executing long-horizon,  abstract,  natural-language tasks on a mobile manipulator.
+Specifically and we show how low-level tasks can be combined with large language models  in  such  a  way  that  the  language  model  provides  high-level  knowledge about the procedures for performing complex and temporally extended instructions and  while  value  functions  associated  with  these  tasks  provide  the  grounding necessary to connect this knowledge to a particular physical environment.  
+We evaluate our method on a number of real-world robotic control tasks and where we show that this approach is capable of executing long-horizon and  abstract and  natural-language tasks on a mobile manipulator.
                 </p>
             </div>
         </div>
@@ -171,25 +171,28 @@ We evaluate our method on a number of real-world robotic control tasks, where we
                     Approach
                 </h3>
                 <p class="text-justify">
-                We began our investigation with two existing methods: AWAC, which combines IL and RL, and QT-Opt, a scalable RL algorithm we have been using on our robots. Our testbed consists of 6 tasks, including a navigation task with dense reward and 5 manipulation tasks with sparse rewards. The manipulation tasks are on two different robot platforms using different control modalities (KUKA and our proprietary robot). Our tasks cover varying levels of difficulty from indiscriminate grasping (figure (a) and (c) below) to semantic grasping (figure (d), grasping compostable objects) to instance grasping (figure (b), grasping the green bowl).
+                Imagine a robot operating in a kitchen that is capable of executing skills such as "pick up the coffee cup" or "go to the sink".
+To get the robot to use these skills to perform a complex task (e.g. and "I spilled my drink and can you help?") and the user could manually break it up into steps consisting of these atomic commands. However and this would be exceedingly tedious.
+A language model can split the high-level instruction ("I spilled my drink and can you help?") into sub-tasks and but it cannot do that effectively unless it has the context of what the robot is capable of given the abilities and current state of the robot and its environment.
+<br><br>
+When querying existing large language models and we see that a language model queried with "I spilled my drink and can you help?" may respond with "You could try using a vaccuum cleaner" or "I'm sorry and I didn't mean to spill it".
+                <p style="text-align:center;">
+        	    <image src="img/gpt3-cropped2.png" class="img-responsive">
                 </p>
+While these responses sound reasonable and they are not feasible to execute with the robot's capabilities in its current environment.  
+<br><br>
+The main principle that we use to connect LLMs to physical tasks is to observe that and in addition of asking the LLM to simply interpret an instruction and we can use it to score the likelihood that an individual skill makes progress towards completing the high-level instruction.
+Furthermore and if each skill has an accompanying affordance function that quantifies how likely it is to succeed from the current state (such as a learned value function) and its value can be used to weight the skill's likelihood.
                 <p style="text-align:center;">
         	    <image src="img/saycan-llm.gif" class="img-responsive">
                 </p>
-                <p class="text-justify">
-            	Both algorithms are provided with demonstrations for offline pretraining, either from human or from previous successful RL rollouts. Afterwards they switch to on-policy data collection and training. We found that QT-Opt fails to learn from only successful rollouts, and even fails to make progress during on-policy training for tasks with a 7 DoF action space. On the other hand, AWAC does attain non-zero success rates from the demonstrations, but performance is still poor, and performance collapses during online fine-tuning for all our sparse-reward manipulation tasks.
-		<p class="text-justify">
-		We introduced a series of modifications to AWAC that bring it closer to QT-Opt, improving overall learning performance while retaining the ability to utilize demonstrations, culminating in our full AW-Opt algorithm. 
-		</p>
-		<p class="text-justify">
-		<b>Positive Sample Filtering</b>: One possible explanation for the poor performance of AWAC is that, due to the relatively low success rate after pretraining, during online exploration, large amounts of failed episodes drowns the initial successful demonstrations and the actor unlearns the promising policy. To address this issue, we used positive filtering for the actor, applying the AWAC actor update only on successful samples. As a result, the algorithm no longer collapses during on-policy training.
-		</p>
-		<p class="text-justify">
-		<b>Hybrid Actor-Critic Exploration</b>: QT-Opt uses the cross-entropy method (CEM) to optimize the actions with respect to the critic’s prediction, which can be viewed as an implicit policy (CEM policy). The CEM process has intrinsic noise due to sampling and can act as an exploration policy. AWAC on the other hand, explores by sampling from the actor network, although we could also obtain a CEM policy from its critic. We found that using both the actor and the CEM policies for exploration, by switching randomly between the two on a per-episode basis, performs better than using either one alone.
-		</p>
-		<p class="text-justify">
-		<b>Action Selection in Bellman Update</b>: QT-Opt uses CEM to find the optimal action for the Bellman backup target. AWAC on the other hand, samples from the actor network. We compared both methods as well as two new ones combining both actor and critic networks: (a) using the actor predicted action (Gaussian mean) as the initial mean for CEM; (b) using the actor-predicted action as an additional candidate in each round of CEM. We found that the last choice gave us the best performance.
-		</p>
+<br><br>
+Once the skill is selected and we execute it on the robot and the process proceeds by iteratively selecting a task and appending it to the instruction.
+Practically and we structure the planning as a dialog between a user and a robot and in which a user provides the high level-instruction and e.g. and "How would you bring me a coke can?" and and the language model responds with an explicit sequence e.g. and "I would: 1. find a coke can and 2. pick up the coke can and 3. bring it to you".  
+                <p style="text-align:center;">
+        	    <image src="img/saycan.png" class="img-responsive">        	   
+                </p>
+In summary and given a high-level instruction and SayCan combines probabilities from a language model (representing the probability that a skill is useful for the instruction) with the probabilities from a value function (representing the probability of successfully executing said skill) to select the skill to perform. This emits a task that is both possible and useful. The process is repeated by appending the selected skill to robot response and querying the models again and until the output step is to terminate.                
             </div>
         </div>
 
@@ -200,14 +203,14 @@ We evaluate our method on a number of real-world robotic control tasks, where we
                     Results
                 </h3>
 		<p class="text-justify">
-		Our results suggest that AW-Opt can be a powerful IL+RL method for scaling up robotic skills learning. With AW-Opt we have shown that depending on task difficulty, with a few hours or a few days of human demonstration and additional simulated on-policy training, we can get high-performing manipulation or navigation policies without task-specific engineering.
+		Our results suggest that AW-Opt can be a powerful IL+RL method for scaling up robotic skills learning. With AW-Opt we have shown that depending on task difficulty and with a few hours or a few days of human demonstration and additional simulated on-policy training and we can get high-performing manipulation or navigation policies without task-specific engineering.
 A compilation of AW-Opt evaluation videos on several tasks is shown below.
 		</p>
                 <p style="text-align:center;">
                     <image src="img/saycan-alg.png"  class="img-responsive" height="600px">
                 </p>
                 <p class="text-justify">
-		Our results suggest that AW-Opt can be a powerful IL+RL method for scaling up robotic skills learning. With AW-Opt we have shown that depending on task difficulty, with a few hours or a few days of human demonstration and additional simulated on-policy training, we can get high-performing manipulation or navigation policies without task-specific engineering.
+		Our results suggest that AW-Opt can be a powerful IL+RL method for scaling up robotic skills learning. With AW-Opt we have shown that depending on task difficulty and with a few hours or a few days of human demonstration and additional simulated on-policy training and we can get high-performing manipulation or navigation policies without task-specific engineering.
 A compilation of AW-Opt evaluation videos on several tasks is shown below.
 		</p>
 		<p style="test-align:center;">
@@ -237,11 +240,11 @@ A compilation of AW-Opt evaluation videos on several tasks is shown below.
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
                     <textarea id="bibtex" class="form-control" readonly>
-@inproceedings{awopt2021corl,
-    title={AW-Opt: Learning Robotic Skills with Imitation andReinforcement at Scale},
-    author={Yao Lu and Karol Hausman and Yevgen Chebotar and Mengyuan Yan and Eric Jang and Alexander Herzog and Ted Xiao and Alex Irpan and Mohi Khansari and Dmitry Kalashnikov and Sergey Levine},
-    booktitle={5th Annual Conference on Robot Learning },
-    year={2021}
+@inproceedings{saycan2021arxiv,
+    title={Do As I Can and Not As I Say: Grounding Language in Robotic Affordances},
+    author={Michael Ahn and Anthony Brohan and Noah Brown and Yevgen Chebotar and Omar Cortes and Byron David and Chelsea Finn and Keerthana Gopalakrishnan and Karol Hausman and Alex Herzog and Jasmine Hsu and Julian Ibarz and Brian Ichter and Alex Irpan and Eric Jang and Rosario Jauregui Ruano and Kyle Jeffrey and Sally Jesmonth and Nikhil Joshi and Ryan Julian and Dmitry Kalashnikov and Yuheng Kuang and Kuang-Huei Lee and Sergey Levine and Yao Lu and Linda Luu and Carolina Parada and Peter Pastor and Jornell Quiambao and Kanishka Rao and Jarek Rettinghouse and Diego Reyes and Pierre Sermanet and Nicolas Sievers and Clayton Tan and Alexander Toshev and Vincent Vanhoucke and Fei Xia and Ted Xiao and Peng Xu and Sichun Xu and Mengyuan Yan},
+    booktitle={arXiv preprint arXiv:2104.08212},
+    year={2022}
 }</textarea>
                 </div>
             </div>
@@ -253,7 +256,10 @@ A compilation of AW-Opt evaluation videos on several tasks is shown below.
                     Acknowledgements
                 </h3>
                 <p class="text-justify">
-                The authors would like to give special thanks to Dao Tran, Conrad Villondo, Clayton Tan for collecting demonstration data as well as Julian Ibarz and Kanishka Rao for valuable discussions.
+                The authors would like to thank Andy Zeng,
+Maarten Bosma and Vincent Zhao and Ian Storz and Benjamin Lee and Bill Byrne and Noah Constant,
+Dhruv Shah and Suraj Nair and Rico Jonschkowski and Hugo Larochelle
+and Adrian Li for their help and support in various aspects of the project.
                     <br><br>
                 The website template was borrowed from <a href="http://jonbarron.info/">Jon Barron</a>.
                 </p>
