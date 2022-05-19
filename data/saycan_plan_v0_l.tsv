@@ -1,0 +1,100 @@
+INPUT	OUTPUT
+Can you bring all the snacks on the table?	1. go to the table, 2. pick up the energy bar, 3. bring it to you, 4. put down the energy bar, 5. go to the table, 6. pick up the multigrain chips, 7. bring it to you, 8. put down the multigrain chips, 9. go to the table, 10. done.
+Can you bring all the drinks on the table?	1. go to the table, 2. pick up the redbull, 3. bring it to you, 4. put down the redbull, 5. go to the table, 6. pick up the 7up, 7. bring it to you, 8. put down the 7up, 9. go to the table, 10. done.
+Can you clear off the close counter table?	1. go to the close counter, 2. pick up the energy bar, 3. go to the trash, 4. put down the energy bar, 5. go to the close counter, 6. pick up the jalapeno chips, 7. go to the trash, 8. put down the jalapeno chips, 9. go to the close counter, 10. pick up the grapefruit soda, 11. go to the trash, 12. put down the grapefruit soda, 13. go to the close counter, 14. done.
+Can you bring me something salty?	1. find a sea salt chips, 2. pick up the sea salt chips, 3. bring it to you, 4. put down the sea salt chips, 5. done.
+Can you bring me a salty snack?	1. find a sea salt chips, 2. pick up the sea salt chips, 3. bring it to you, 4. put down the sea salt chips, 5. done.
+Can you bring me something spicy?	1. find a jalapeno chips, 2. pick up the jalapeno chips, 3. bring it to you, 4. put down the jalapeno chips, 5. done.
+Can you bring me a spicy snack?	1. find a jalapeno chips, 2. pick up the jalapeno chips, 3. bring it to you, 4. put down the jalapeno chips, 5. done.
+I love spice, can you get something to eat?	1. find a jalapeno chips, 2. pick up the jalapeno chips, 3. bring it to you, 4. put down the jalapeno chips, 5. done.
+I’m exhausted, can you bring me a drink?	1. find a redbull, 2. pick up the redbull, 3. bring it to you, 4. put down the redbull, 5. done.
+Could you get me something refreshing?	1. find a water, 2. pick up the water, 3. bring it to you, 4. put down the water, 5. done.
+Could you get me a drink with caffeine?	1. find a coke, 2. pick up the coke, 3. bring it to you, 4. put down the coke, 5. done.
+Could you get me something caffeinated?	1. find a coke, 2. pick up the coke, 3. bring it to you, 4. put down the coke, 5. done.
+Could you get me something caffeinated?	1. find a redbull, 2. pick up the redbull, 3. bring it to you, 4. put down the redbull, 5. done.
+Could you get me something caffeinated?	1. find a pepsi, 2. pick up the pepsi, 3. bring it to you, 4. put down the pepsi, 5. done.
+Could you get me a soda that is not caffeinated?	1. find a 7up, 2. pick up the 7up, 3. bring it to you, 4. put down the 7up, 5. done.
+Bring me something that is not an apple.	1. find a orange, 2. pick up the orange, 3. bring it to you, 4. put down the orange, 5. done.
+Bring me a fruit that is not an apple.	1. find a orange, 2. pick up the orange, 3. bring it to you, 4. put down the orange, 5. done.
+Bring me a soda that isn’t a coke.	1. find a pepsi, 2. pick up the pepsi, 3. bring it to you, 4. put down the pepsi, 5. done.
+Bring me a drink that isn’t an water or a coke.	1. find a tea, 2. pick up the tea, 3. bring it to you, 4. put down the tea, 5. done.
+I’d like a clear soda.	1. find a 7up, 2. pick up the 7up, 3. bring it to you, 4. put down the 7up, 5. done.
+Restock the rice chips on the counter	1. find the rice chips, 2. pick up the rice chips, 3. go to the counter, 4. put down the rice chips, 5. done.
+Deliver the red bull to the close counter	1. find a redbull, 2. pick up the redbull, 3. go to the counter, 4. put down the redbull, 5. done.
+Clear the jalapeno chips off the close counter	1. find the jalapeno chips, 2. pick up the jalapeno chips, 3. go to the trash, 4. put down the jalapeno chips, 5. done
+Lift and hold the coke can up.	1. pick up the coke, 2. done
+Put the coke can in your gripper.	1. pick up the coke, 2. done
+Lift the coke	1. pick up the coke, 2. done
+Can you bring me something salty?	1. find the sea salt chips, 2. pick up the sea salt chips, 3. bring it to you, 4. put down the sea salt chips, 5. done
+Can you bring me a salty snack?	1. find the sea salt chips, 2. pick up the sea salt chips, 3. bring it to you, 4. put down the sea salt chips, 5. done
+Can you bring me something spicy?	1. find the jalapeno chips, 2. pick up the jalapeno chips, 3. bring it to you, 4. put down the jalapeno chips, 5. done
+Can you bring me a spicy snack?	1. find the jalapeno chips, 2. pick up the jalapeno chips, 3. bring it to you, 4. put down the jalapeno chips, 5. done
+I love spice, can you get something to eat?	1. find the jalapeno chips, 2. pick up the jalapeno chips, 3. bring it to you, 4. put down the jalapeno chips, 5. done
+I’m exhausted, can you bring me a drink?	1. find a redbull, 2. pick up the redbull, 3. bring it to you, 4. put down the redbull, 5. done
+Could you get me something refreshing?	1. find a water bottle, 2. pick up the water bottle, 3. bring it to you, 4. put down the water bottle, 5. done
+Could you get me a drink with caffeine?	1. find a coke, 2. pick up the coke, 3. bring it to you, 4. put down the coke, 5. done
+Could you get me something caffeinated?	1. find a pepsi, 2. pick up the pepsi, 3. bring it to you, 4. put down the pepsi, 5. done
+Could you get me a soda that is not caffeinated?	1. find a 7up, 2. pick up the 7up, 3. bring it to you, 4. put down the 7up, 5. done
+Can you throw away three oranges?	1. find an orange, 2. pick up the orange, 3. go to the trash, 4. put down the orange, 5. find an orange, 6. pick up the orange, 7. go to the trash, 8. put down the orange, 9. find an orange, 10. pick up the orange, 11. go to the trash, 12. put down the orange, 13. done
+Bring me something that is not an apple.	1. find an orange, 2. pick up the orange, 3. bring it to you, 4. put down the orange, 5. done
+Bring me a fruit that is not an apple.	1. find an orange, 2. pick up the orange, 3. bring it to you, 4. put down the orange, 5. done
+Bring me a soda that isn’t a coke.	1. find a pepsi, 2. pick up the pepsi, 3. bring it to you, 4. put down the pepsi, 5. done
+Bring me a drink that isn’t an water or a coke.	1. find the tea, 2. pick up the tea, 3. bring it to you, 4. put down the tea, 5. done
+I’d like a clear soda.	1. find a 7up, 2. pick up the 7up, 3. bring it to you, 4. put down the 7up, 5. done
+Clean off the table.	1. go to the table, 2. pick up the orange, 3. go to the trash, 4. put down the orange, 5. go to the table, 6. pick up the rice chips, 7. go to the trash, 8. put down the rice chips, 9. done
+Bring me everything from the table.	1. go to the table, 2. pick up the energy bar, 3. bring it to you, 4. put down the energy bar, 5. go to the table, 6. pick up the multigrain chips, 7. bring it to you, 8. put down the multigrain chips, 9. done
+Bring me a drink and snack for lunch.	1. find a water bottle, 2. pick up the water bottle, 3. bring it to you, 4. put down the water bottle, 5. find the multigrain chips, 6. pick up the multigrain chips, 7. bring it to you, 8. put down the multigrain chips, 9. done
+I’m allergic to apples, can I get a fruit?	1. find an orange, 2. pick up the orange, 3. bring it to you, 4. put down the orange, 5. done
+Bring me a soda that is not a coke.	1. find a pepsi, 2. pick up the pepsi, 3. bring it to you, 4. put down the pepsi, 5. done
+Bring me three different drinks.	1. find a coke, 2. pick up the coke, 3. bring it to you, 4. put down the coke, 5. find a lime soda, 6. pick up the lime soda, 7. bring it to you, 8. put down the lime soda, 9. find a redbull, 10. pick up the redbull, 11. bring it to you, 12. put down the redbull, 13. done
+Throw away all the fruits on the table.	1. go to the table, 2. pick up the apple, 3. go to the trash, 4. put down the apple, 5. go to the table, 6. pick up the orange, 7. go to the trash, 8. put down the orange, 9. done
+How would you pick up the coke can?	1. pick up the coke can, 2. done
+How would you grab the coke can?	1. pick up the coke can, 2. done
+How would you throw away the apple?	1. find an apple, 2. pick up the apple, 3. go to the trash, 4. put down the apple, 5. done
+How would you bring me a sprite?	1. find a sprite can, 2. pick up the sprite can, 3. bring it to you, 4. put down the sprite can, 5. done
+How would you put a banana on the counter?	1. pick up the banana, 2. go to the counter, 3. put down the banana, 4. done
+How would you move a banana to the table?	1. pick up the banana, 2. go to the table, 3. put down the banana, 4. done, I opened a sprite earlier.
+How would you bring me the open can?	1. find a sprite can, 2. pick up the sprite can, 3. bring it to you, 4. put down the sprite can, 5. done
+Can I have a redbull please?	1. find a redbull can, 2. pick up the redbull can, 3. bring it to you, 4. put down the redbull can, 5. done
+How would you bring me a fruit?	1. find a banana, 2. pick up the banana, 3. bring it to you, 4. put down the banana, 5. done
+How would you put a bag of chips and water bottle on the table?	1. find the bag of chips, 2. pick up the bag of chips, 3. go to the table, 4. put down the bag of chips, 5. find a water bottle, 6. pick up the water bottle, 7. go to the table, 8. put down the water bottle, 9. done
+How would you bring me a fruit, a soda, and a bag of chips for lunch?	1. find the bag of chips, 2. pick up the bag of chips, 3. bring it to you, 4. put down the bag of chips, 5. find a coke can, 6. pick up the coke can, 7. bring it to you, 8. put down the coke can, 9. find a banana, 10. pick up the banana, 11. bring it to you, 12. put down the banana, 13. done
+How would you move the chips bag from the table to the counter?	1. find the bag of chips, 2. pick up the bag of chips, 3. go to the counter, 4. put down the bag of chips, 5. done
+How would you visit the counter and the table in the kitchen?	1. go to the counter, 2. go to the table, 3. done
+How would you restock chips in the drawer?	1. find the bag of chips, 2. pick up the bag of chips, 3. go to the drawer, 4. put down the bag of chips, 5. open the drawer, 6. pick up the bag of chips, 7. put down the bag of chips, 8. close the drawer, 9. done
+How would you bring me chips from the drawer?	1. go to the drawer, 2. open the drawer, 3. pick up the bag of chips, 4. close the drawer, 5. bring it to you, 6. put down the bag of chips, 7. done
+How would you put the coke can in your gripper?	1. pick up the coke can, 2. done
+How would you lift the coke can?	1. pick up the coke can, 2. done
+How would you find the table?	1. go to the table, 2. done
+How would you go to the table?	1. go to the table, 2. done
+How would you navigate to the table?	1. go to the table, 2. done
+How would you park at the table?	1. go to the table, 2. done
+How would you bring me an apple from the drawer?	1. go to the drawer, 2. open the drawer, 3. pick up the apple, 4. close the drawer, 5. bring it to you, 6. put down the apple, 7. done
+How would you throw a coke can away?	1. find a coke can, 2. pick up the coke can, 3. go to the trash, 4. put down the coke can, 5. done
+Pick up the coke can.	1. pick up the coke can, 2. done
+Grab the coke can.	1. pick up the coke can, 2. done
+Throw away the apple.	1. find an apple, 2. pick up the apple, 3. go to the trash, 4. put down the apple, 5. done
+Bring me a sprite.	1. find a sprite can, 2. pick up the sprite can, 3. bring it to you, 4. put down the sprite can, 5. done
+Put a banana on the counter.	1. pick up the banana, 2. go to the counter, 3. put down the banana, 4. done
+Move a banana to the table.	1. pick up the banana, 2. go to the table, 3. put down the banana, 4. done
+I opened a sprite earlier.  Bring me the open can.	1. find a sprite can, 2. pick up the sprite can, 3. bring it to you, 4. put down the sprite can, 5. done
+Can I have a redbull please.	1. find a redbull can, 2. pick up the redbull can, 3. bring it to you, 4. put down the redbull can, 5. done
+Bring me a fruit.	1. find a banana, 2. pick up the banana, 3. bring it to you, 4. put down the banana, 5. done
+Put a bag of chips and water bottle on the table.	1. find the bag of chips, 2. pick up the bag of chips, 3. go to the table, 4. put down the bag of chips, 5. find a water bottle, 6. pick up the water bottle, 7. go to the table, 8. put down the water bottle, 9. done
+Bring me a fruit, a soda, and a bag of chips for lunch.	1. find the bag of chips, 2. pick up the bag of chips, 3. bring it to you, 4. put down the bag of chips, 5. find a coke can, 6. pick up the coke can, 7. bring it to you, 8. put down the coke can, 9. find a banana, 10. pick up the banana, 11. bring it to you, 12. put down the banana, 13. done
+Move the chips bag from the table to the counter.	1. find the bag of chips, 2. pick up the bag of chips, 3. go to the counter, 4. put down the bag of chips, 5. done
+Visit the counter and the table in the kitchen.	1. go to the counter, 2. go to the table, 3. done
+Restock chips in the drawer.	1. find the bag of chips, 2. pick up the bag of chips, 3. go to the drawer, 4. put down the bag of chips, 5. open the drawer, 6. pick up the bag of chips, 7. put down the bag of chips, 8. close the drawer, 9. done
+Bring me chips from the drawer.	1. go to the drawer, 2. open the drawer, 3. pick up the bag of chips, 4. close the drawer, 5. bring it to you, 6. put down the bag of chips, 7. done
+Put the coke can in your gripper.	1. pick up the coke can, 2. done
+Lift the coke can.	1. pick up the coke can, 2. done
+Find the table.	1. go to the table, 2. done
+Go to the table.	1. go to the table, 2. done
+Navigate to the table.	1. go to the table, 2. done
+Park at the table.	1. go to the table, 2. done
+Bring me an apple from the drawer.	1. go to the drawer, 2. open the drawer, 3. pick up the apple, 4. close the drawer, 5. bring it to you, 6. put down the apple, 7. done
+Throw the coke can away.	1. find a coke can, 2. pick up the coke can, 3. go to the trash, 4. put down the coke can, 5. done
+How would you move the coke can to trash can?	1. find a coke can, 2. pick up the coke can, 3. go to the trash, 4. put down the coke can, 5. done
+How would you go to the table and the counter?	1. go to the table, 2. go to the counter, 3. done
+Go to the table and the counter?	1. go to the table, 2. go to the counter, 3. done
+Throw away the sprite.	1. find a sprite can, 2. pick up the sprite can, 3. go to the trash, 4. put down the sprite can, 5. done
