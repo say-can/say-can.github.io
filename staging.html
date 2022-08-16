@@ -322,8 +322,11 @@ In summary, given a high-level instruction, SayCan combines probabilities from a
                 <h3>
                     New Capabilities
                 </h3>
+                <p>
                 PaLM-SayCan enables new capabilities. First, we show that it is very easy to incorporate new skills into the system, and use drawer manipulation as an example. Second, we show by leveraging chain of thought reasoning, we are able to solve tasks that requires reasoning. Finally we show the system can work with multilingual queries, without explicitly being designed to.
+            </p>
 
+                
                 SayCan is capable of integrating new skills by simply adding the new skills as options for the LLM and provide accompanying value functions and add an example in the prompt with that skill. For example, with the skills open, close, and go to the drawer, SayCan is capable of solving tasks such as “restock the coke and pepsi into the drawer”.
 
                 <p style="test-align:center;">
@@ -340,8 +343,9 @@ In summary, given a high-level instruction, SayCan combines probabilities from a
                    </video>     
                 </p>
 
-
+                <p>
                 SayCan can be integrated with recent work improving LLM reasoning, such as <a href="https://arxiv.org/abs/2201.11903">Chain of Thought</a>. With chain-of-thought prompting, SayCan is able to handle tasks that require reasoning.
+            </p>
 
                 <p style="test-align:center;">
                     <video id="v0" width="100%" playsinline muted loop controls>
@@ -349,7 +353,13 @@ In summary, given a high-level instruction, SayCan combines probabilities from a
                    </video>     
                 </p>
 
-                Finally, while not explicitly designed to work with multilingual queries, PaLM-SayCan is able to handle them. The LLM was trained on a multilingual corpus and thus SayCan can handle multilingual queries other than English. There is almost no performance drop on planning success rate when changing the queries from English to Chinese, French and Spanish.
+                <p>
+                While not explicitly designed to work with multilingual queries, PaLM-SayCan is able to handle them. The LLM was trained on a multilingual corpus and thus SayCan can handle multilingual queries other than English. There is almost no performance drop on planning success rate when changing the queries from English to Chinese, French and Spanish.
+            </p>
+
+                <p>
+                As presented herein, SayCan only receives environmental feedback through value functions at the current decision step, meaning if a skill fails or the environment changes, the necessary feedback may not be available. Owing to the extendibility and the natural language interface, follow up work builds upon SayCan to enable closed-loop planning by leveraging environment feedback (from e.g., success detectors, scene descriptors, or even human feedback) through an <a href="https://innermonologue.github.io/"> inner monologue </a>.
+            </p>
 
             </div>
         </div>
