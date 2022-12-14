@@ -1,0 +1,102 @@
+Task Family	Query	Robot Start State	Env Start State 
+Context / Disturbances = No "How would you"	I opened a pepsi earlier. How would you bring me an open can?	with operator	pepsi can on table
+	I spilled my coke, can you bring me a replacement?	with operator	coke on table
+	I spilled my coke, can you bring me something to clean it up?	with operator	coke on table and sponge on far counter
+	I accidentally dropped that jalapeno chip bag after eating it. Would you mind throwing it away?	with operator	jalapeno chips on close counter
+	I like fruits, can you bring me something I would like?	with operator	apple on close counter
+	There is a close counter, far counter, and table. How would you visit all the locations?	with operator	nav only
+	There is a close counter, trash can, and table. How would you visit all the locations?	with operator	nav only
+	Redbull is my faviorite drink, can I have a one please?	with operator	redbull on table, rxbar chocolate on table
+	Would you bring me a coke can?	with operator	coke can on table, 7up on table
+	Please, move the pepsi to the close counter	with operator	pepsi on table, 7up on table
+*note purposeful misspelling	Please, move the ppsi to the close cuonter	with operator	pepsi on table, 7up on table
+	Can you move the coke can to the far counter?	with operator	coke on table
+*note purposeful grammar	Can you move coke can to far counter?	with operator	coke on table
+	Would you throw away the bag of chips for me?	with operator	multgrain chips on close counter
+*note purposeful misspelling	Would you throw away the bag of chpis for me?	with operator	multgrain chips on close counter
+Multiple	How would you put an energy bar and water bottle on the table	with operator	rxbar chocolate on table, water bottle on far counter, sponge on far counters, blue chip bag on near counter 
+	How would you bring me a lime soda and a bag of chips	with operator	lime soda on far counter, jalapeno chips on close counter, multigrain chips on close counter
+	Can you throw away the apple and bring me a coke	with operator	apple on close counter, coke on table
+	How would you bring me a 7up can and a tea?	with operator	7up on table, coke on table, tea on close counter
+	How would throw away all the items on the table?	with operator	coke can on table, redbull on table
+	How would you move an multigrain chips to the table and an apple to the far counter?	with operator	multigrain chips on close counter, apple on close counter
+	How would you move the lime soda, the sponge, and the water bottle to the table?	with operator	lime soda on far counter, sponge on far counter, water on far counter
+	How would you bring me two sodas?	with operator	coke on table, pepsi on table
+	How would you move three cokes to the trash can?	with operator	three cokes on the table
+	How would you throw away two cokes?	with operator	two cokes on table, and one 7up
+	How would you bring me two different sodas?	with operator	a pepsi, 7up, and coke, and another coke on table
+	How would you bring me an apple, a coke, and water bottle?	with operator	apple on close counter, coke on table, and water bottle on far counter
+	I spilled my coke on the table, how would you throw it away and then bring me something to help clean?	with operator	coke on table, sponge on far counter
+	I just worked out, can you bring me a drink and a snack to recover?	with operator	water bottle on the far counter, apple on the close counter, energy bar on the table
+	How would you bring me a fruit, a soda, and a bag of chips for lunch	with operator	apple on close counter, multigrain chips on close counter, coke can on table
+Abstract Task Specification: Verb synonyms	How would you throw away the apple	with operator	apple on close counter, 
+	How would you bring me a sponge?	with operator	sponge on far counter
+	How would you bring me a coke can?	with operator	coke can on table, chips on table, "trash empty"
+	How would you grab me an apple?	with operator	apple on the close counter
+	How would you grab me a 7up from the table?	with operator	7up on table, coke can on the table
+	How would you deliver the redbull to the close counter?	with operator	red bull on table, 7up on the table
+	How would you throw away the jalapeno chips?	with operator	jalapeno chips on close counter
+	How would you restock the rice chips on the far counter?	with operator	rice chpis on close counter
+	How would you recycle the coke can?	with operator	coke can on table
+	How would you throw away the water bottle?	with operator	water bottle on far counter
+	How would you bring me something hydrating?	with operator	water bottle on far counter, pepsi can on table, apple on close counter, tea on close counter, sponge on far counter, rxbar chocolate on table
+	How would you put the apple back on the far counter?	with operator	apple on close counter, 
+	How would you recycle the 7up?	with operator	7up on table
+	How would you throw away jalapeno chips?	with operator	jalapeno chips on close counter
+	How would you compost the apple?	with operator	apple on close counter, 
+Structured Language	How would you pick up the apple and move it to the trash?	with operator	apple on close counter, 
+Mirror Verb synonyms	How would you pick up the sponge and bring it to me?	with operator	sponge on far counter
+	How would you pick up the coke can and bring it to me?	with operator	coke can on table, chips on table, "trash empty"
+	How would you pick up the apple and bring it to me?	with operator	apple on the close counter
+	How would you pick up the 7up and bring it to me?	with operator	7up on table, coke can on the table
+	How would you pick up the redbull and move it to the close counter?	with operator	red bull on table, 7up on the table
+	How would you pick up the jalapeno chips and move it to the trash?	How would you pick up the jalapeno chips and move it to the trash?	jalapeno chips on close counter
+	How would you pick up the rice chips and move it to the far counter?	with operator	rice chpis on close counter
+	How would you pick up the coke can and move it to the trash can?	with operator	coke can on table
+	How would you pick up the water bottle and move it to the trash can?	with operator	water bottle on far counter
+	How would you pick up the grapefruit soda and bring it to me?	with operator	water bottle on far counter, pepsi can on table, apple on close counter, tea on close counter, sponge on far counter, rxbar chocolate on table
+	How would you pick up the apple and move it to the far counter?	with operator	apple on close counter, 
+	How would you pick up the 7up and move it to the trash can?	with operator	7up on table
+	How would you pick up the jalepeno chips and move it to the trash can?	with operator	jalapeno chips on close counter
+	How would you pick up the apple and move it to the trash can?	with operator	apple on close counter, 
+Abstract Task Specification: Noun synonyms	How would you bring me lime drink?	with operator	green can on far counter, water bottle on far counter
+	How would you bring me something to clean the kitchen with?	with operator	sponge on far counter
+	How would you bring me something to eat?	with operator	rx chocolate bar on table, apple on close counter, multigrain chips on close counter
+	How would you put the grapefruit drink on the close counter?	with operator	grapefruit lacroix on table
+	How would you move the sugary drink to the far counter?	with operator	grapefruit lacroix on table, pepsi on table, red bull on table
+	How would you move something with caffine from the table to the close counter	with operator	grapefruit lacroix on table, pepsi on table, red bull on table
+	How would you bring me an energy bar?	with operator	rxbar bar on table
+	How would you bring me something to quench my thirst?	with operator	water bottle on far counter, pepsi can on table, apple on close counter, sponge on far counter, rxbar chocolate on table, tea on close counter
+	How would you bring me a fruit?	with operator	apple on close counter, blue chip bag on close counter
+	How would you bring me a fruit from the close counter?	with operator	apple on close counter, blue chip bag on close counter
+	How would you bring me something that is not a fruit from the close counter?	with operator	apple on close counter, blue chip bag on close counter
+	How would you bring me a soda from the table?	with operator	coke can on table, energy bar on table
+	How would you bring me a soda?	with operator	coke can on table, energy bar on table
+	How would you bring me a bag of chips from close counter?	with operator	apple, jalapeno chips, multigrain chips, and tea on close counter
+	How would you bring me a snack?	with operator	7up and apple on table, rice chips and tea on close counter
+Embodiment	How would you put the coke can on the far counter	with operator	coke can on table, rxbar chocolate on table, sponge on far counter
+	How would you put the coke can on the far counter	at table	coke can on table, rxbar chocolate on table, sponge on far counter
+	How would you put the coke can on the far counter	at table with coke can in hand	
+	How would you put the coke can on the far counter	at far counter with coke can in hand	coke can on table, rxbar chocolate on table, sponge on far counter
+	How would you put the sponge on the close counter	with operator	sponge on far counter, apple on near counter
+	How would you put the sponge on the close counter	at far counter	sponge on far counter, apple on near counter
+	How would you put the sponge on the close counter	at near counter with sponge in hand	sponge in hand, apple on near counter
+	How would you put the sponge on the close counter		
+	How would you pick up the drink from the far counter	at far counter	water bottle, sponge on far counter
+	I left something on the table, can you throw it away?		
+	I left something on the table or the counter, can you bring it to me?		
+Abstract Task Specification: Single	Pick up the coke can	In front of table,	coke can on table, apple on table
+	Put the coke can in the your gripper	In front of table,	coke can on table, apple on table
+	Grasp the coke can	In front of table,	coke can on table, apple on table
+	Hold onto the coke can	In front of table,	coke can on table, apple on table
+	Lift and hold the coke can up	In front of table,	coke can on table, apple on table
+	Put the coke can down	In front of table, With coke can in hand	apple on table
+	Place the coke can on the table	In front of table, With coke can in hand	apple on table
+	Let go of the coke can	In front of table, With coke can in hand	apple on table
+	Release the coke can	In front of table, With coke can in hand	
+	Place the coke can	In front of table, With coke can in hand	
+	Move to the table	with operator	nav only
+	Go to the table	with operator	nav only
+	Park at the table	with operator	nav only
+	Come to the table	with operator	nav only
+	Navigate to the table	with operator	nav only
